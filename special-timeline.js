@@ -8,15 +8,18 @@ timeline = new TL.Timeline(
 	additionalOptions
 );
 
-
 //hide timeline area on load
 $(document).ready(function(){
 	$('.tl-timenav').css('display', 'none');
 	$('.tl-menubar').css('display', 'none');
 });
 
+//hide on certain hardcoded ids
 timeline.on('change', function(data){
-	if (data.unique_id == 'google-spreadsheet-example' || data.unique_id == 'another-flickr-example') {
+	if (
+		data.unique_id == 'google-spreadsheet-example' || 
+		data.unique_id == 'another-flickr-example'
+	){
 		$('.tl-timenav').slideUp();
    		$('.tl-menubar').slideUp();
 	} else {
