@@ -27,5 +27,3 @@ timeline.on('change', function(data){
    		$('.tl-menubar').slideDown();
 	}
 });
-
-
