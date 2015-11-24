@@ -17,13 +17,13 @@ $(document).ready(function(){
 //hide on certain hardcoded ids
 timeline.on('change', function(data){
 	if (
-		data.unique_id == 'google-spreadsheet-example' || 
+		data.unique_id == 'google-spreadsheet-example' ||
 		data.unique_id == 'another-flickr-example'
 	){
 		$('.tl-timenav').slideUp();
-   		$('.tl-menubar').slideUp();
+   	$('.tl-menubar').slideUp();
 	} else {
 		$('.tl-timenav').slideDown();
-   		$('.tl-menubar').slideDown();
+   	$('.tl-menubar').slideDown();
 	}
 });
